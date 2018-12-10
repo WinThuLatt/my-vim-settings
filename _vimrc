@@ -5,7 +5,6 @@ set encoding=utf-8
 set number
 let NERDTreeShowHidden=1
 set clipboard=unnamed
-" let g:python3_host_prog = 'C:\\Users\\ecq752\\AppData\\Local\\Programs\\Python\\Python37\\python.exe'
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
