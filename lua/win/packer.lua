@@ -25,7 +25,9 @@ use {
 }
 
 use('xiyaowong/transparent.nvim')
--- use('nvim-treesitter/nvim-treesitter',{run=':TSUpdate'})
+
+use('nvim-treesitter/nvim-treesitter',{run=':TSUpdate'})
+
 use {
   'VonHeikemen/lsp-zero.nvim',
   branch = 'v2.x',

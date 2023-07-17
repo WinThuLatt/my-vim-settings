@@ -1,7 +1,6 @@
 require("win")
 
-vim.cmd('source ~/AppData/Local/nvim/coc.vim')
-
+vim.cmd('source ~/.config/nvim/coc.vim')
 
 
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
