@@ -20,6 +20,6 @@ vim.keymap.set("x", "p" , "\"_dP")
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 
 
-vim.keymap.set("n", "<C-Space>" , ":NvimTreeToggle<CR>")
+vim.keymap.set("n", "<leader><leader>" , ":NvimTreeToggle<CR>")
 
 vim.keymap.set("n", "J", "mzJ`z")
