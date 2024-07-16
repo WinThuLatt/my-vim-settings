@@ -6,4 +6,7 @@ lsp.on_attach(function(client, bufnr)
   lsp.default_keymaps({buffer = bufnr})
 end)
 
+require('lspconfig').gopls.setup({
+})
+
 lsp.setup()

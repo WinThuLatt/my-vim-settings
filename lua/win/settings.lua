@@ -2,7 +2,6 @@ vim.opt.clipboard = "unnamedplus"
 local opt = vim.opt
 
 opt.nu = true
-opt.relativenumber = true
 
 
 opt.tabstop=4
@@ -25,7 +24,5 @@ opt.updatetime = 50
 
 vim.o.smartcase = true
 vim.o.ignorecase = true
-
-
 
 
