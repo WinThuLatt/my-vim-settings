@@ -1,0 +1,5 @@
+runtime/**
+lldb/**
+coc/**
+**/nvim-data/**
+nvim/plugin/*
