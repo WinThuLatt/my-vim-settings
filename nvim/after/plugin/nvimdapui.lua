@@ -13,16 +13,15 @@ dap.listeners.before.event_exited.dapui_config = function()
   dapui.close()
 end
 
-
-
+dapui.setup()
 
 dap.adapters.codelldb = {
   type = 'server',
-  port = "${port}",
+  port = "13000",
   executable = {
     -- CHANGE THIS to your path!
-    command = 'C:/tools/neovim/nvim-win64/config/lldb/extension/adapter/codelldb',
-    args = {"--port", "${port}"},
+    command = 'C:\\tools\\neovim\\nvim-win64\\config\\lldb\\extension\\adapter\\codelldb.exe',
+    args = {"--port", "13000"},
 
     -- On windows you may have to uncomment this:
     detached = false,
@@ -44,7 +43,7 @@ dap.configurations.cpp = {
     type = "codelldb",
     request = "launch",
     program = function()
-      return vim.fn.input('C:/Program Files/LLVM/bin/lldb.exe', vim.fn.getcwd() .. '/', 'file')
+      return vim.fn.input('Path to executable: ', vim.fn.getcwd() .. '/', 'file')
     end,
     cwd = '${workspaceFolder}',
     stopOnEntry = false,
